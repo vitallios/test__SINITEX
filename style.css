@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+:root {
+ --color1: #fff;
+ --color2: #000;
+}
+
+body {
+ line-height: 1.6;
+ font-size: 16px;
+ font-family: "Poppins", sans-serif;
+ font-style: normal;
+ color: var(--color1);
+}
+
+a {
+ text-decoration: none;
+ color: var(--color1);
+}
+
+button {
+ outline: none;
+ border: none;
+}
+
+input {
+ border: none;
+ outline: none;
+ background-color: none;
+}
+
+ul,
+li {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+.container {
+ max-width: 1520px;
+ margin: 0 auto;
+ padding: 0 10px;
+}
+.wrap{max-width: 1280px;}
+
+.header {
+ background-image: url(./assets/images/homeBg.png);
+ width: 100%;
+ min-height: 850px;
+ height: 100%;
+
+ .header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 50px;
+  align-items: center;
+
+  .nav__menu {
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+  }
+
+  .nav__contacts {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+  }
+ }
+
+ .header__main {
+  margin-top: 100px;
+
+  .header__main-wrap {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 60px;
+  }
+
+  .header__main-text {
+   flex: 2;
+  }
+
+  .main__text {
+   .main__text-title {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+   }
+
+   .main__text-title>p {
+    font-size: 40px;
+   }
+
+   .main__text-text {
+    width: 58%;
+   }
+
+   .main__text-list {
+    margin-top: 40px;
+    padding: 25px 30px;
+    background: linear-gradient(90deg, rgba(150, 154, 247, 30%), rgba(150, 154, 247, 0%));
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    gap: 5px;
+
+    li {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 10px;
+     font-size: 22px;
+    }
+   }
+  }
+
+  .header__main__form {
+   flex: 1;
+  }
+
+  .header__form {
+   width: max-content;
+   max-width: 380px;
+
+   .header__form-title {
+    background: linear-gradient(90deg, #6A32B4, #552693);
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+
+    h3 {
+     width: 55%;
+     margin: 0 auto;
+     padding: 20px 0;
+    }
+   }
+
+   .header__main__form {
+    background-color: #F2F3F5;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+
+    .header__main-form-name {
+     display: flex;
+     flex-direction: column;
+
+     label {
+      padding-left: 10px;
+      color: #626366;
+     }
+
+     input {
+      padding: 20px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+     }
+    }
+
+    .header__main-form-tel {
+     display: flex;
+     flex-direction: column;
+
+     label {
+      padding-left: 10px;
+      color: #626366;
+     }
+
+     input {
+      padding: 20px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+     }
+    }
+
+    .header__main-form-btn {
+     margin-top: 34px;
+     background-color: #FFA500;
+     color: var(--color1);
+     font-size: 20px;
+     padding: 20px 0;
+     align-items: center;
+     border-radius: 10px;
+     -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+     -ms-border-radius: 10px;
+     -o-border-radius: 10px;
+    }
+
+    .header__main__form-info {
+     margin-top: 20px;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+     align-items: center;
+
+     p {
+      color: #C0C0C0;
+     }
+    }
+   }
+  }
+ }
+}
